@@ -18,7 +18,7 @@ html {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-image: url("/index.jpg");
+  background-image: url("../images/index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: rgba(40, 209, 25, 0.911); */

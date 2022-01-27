@@ -5,6 +5,10 @@
       padding: 0;
       box-sizing: border-box;
     }
+    body {
+      background-color: cornsilk;
+    }
+
     html {
       font-size: 62.5%;
     }
