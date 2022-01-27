@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/helpDesk.css">
+</head>
+<body>
+	{{!-- <div class="helpDeskNav">
+	{{>navbar}}
+	</div> --}}
+
+<div class="helpDeskDashboard">
+      {{>dashboard}}
+    </div>
+	<div class="mainCtnrhelpDesk">
+		<div class="helpDeskImg">
+			<div class="fancyBorder"></div>
+			<img src="/helpdesk.png" alt="">
+		</div>
+		<div class="main">  	
+			<input type="checkbox" id="helpDeskchk" aria-hidden="true">
+
+			<div class="helpDesk">
+				<form>
+					<label for="chk" aria-hidden="true" id="heading">Help Desk</label>
+					
+                    <input class="helpDeskInput" type="email" name="txt" placeholder="Enter Your Email Here" required="true">
+
+					
+                    <textarea name="" id="" class="helpDeskInput helpDeskFormTextArea"  placeholder="Enter Your Query Here... "></textarea>
+					
+					<button type="submit" class="helpDeskBtn">Submit</button>
+
+				</form>
+			</div>
+			
+			
+		</div>
+	</div>
+	</body>
+</html>

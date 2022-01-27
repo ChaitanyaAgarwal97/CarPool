@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="/css/myProfile.css">
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <div class="myProfileDashboard">
+      {{>dashboard}}
+    </div>
+    <div class="myProfileMainCtnr">
+        <!-- <div class="myProfileMainCtnrImg"> -->
+            <!-- <img src="myProfileImg.png" alt=""> -->
+        <!-- </div> -->
+
+      <div class="myProfileSubCtnrLeft">
+        <div class="myProfileHloBox">
+          <div class="myProfileUserName">Hello , kunal!</div>
+          <div class="myProfileHloBoxMsg">Welcome To Your Profile Page</div>
+        </div>
+        <span class="myProfileSpan">Update Your Profile Here</span>
+        <div class="myProfileUpdateForm">
+          <form action="">
+            <div class="myProfileFirstNameHeading FormHeading">
+              <span> First Name :&nbsp</span>
+
+              <span contenteditable="true">kunal <i class="material-icons" contenteditable="false">edit</i></span>
+                  
+             
+              
+            </div>
+            <div class="myProfileLastNameHeading FormHeading">
+              <span> Last Name :&nbsp</span>
+              <span contenteditable="true">Ganguly <i class="material-icons" contenteditable="false">edit</i></span>
+             
+            </div>
+
+            <div class="myProfilePhNoHeading FormHeading">
+              <span> Phone Number :&nbsp</span>
+
+              <span contenteditable="true">9119223599 <i class="material-icons" contenteditable="false">edit</i></span>
+              <!-- <i class="material-icons">edit</i> -->
+            </div>
+
+            <div class="myProfileGmailHeading FormHeading">
+              <span> Email :&nbsp</span>
+              <span contenteditable="true">kunalganguly@gmail.com
+                <i class="material-icons" contenteditable="false">edit</i>
+              </span>
+              
+            </div>
+            <button type="submit" class="myProfileFormUpdateBtn">Update</button>
+          </form>
+        </div>
+      </div>
+      <div class="myProfileSubCtnrRight">
+        <div class="myProfileCardSec">
+          <div class="myProfileCardSecHeading">
+            <span>Your Missions</span>
+          </div>
+          <div class="myProfileCardSecArea">
+            <div class="cardOuterBox">
+              <div class="cardSubBox">
+                <div class="cardMap">
+                  <img src="googlemap.png" alt="" />
+                </div>
+                <div class="cardData">
+                  <div class="cardDataName">
+                    <i class="material-icons">account_circle</i>
+                    <h1>kunal Ganguly</h1>
+                  </div>
+                  <div class="cardDataPhno">
+                    <i class="material-icons">call</i>
+                    <h2>9119223599</h2>
+                  </div>
+                  <div class="cardDataFromTo">
+                    <div>
+                      <i class="material-icons">location_on</i>
+                      <h2>pal</h2>
+                    </div>
+
+                    <div>
+                      <i class="material-icons">location_on</i>
+                      <h2>CHB</h2>
+                    </div>
+                  </div>
+
+                  <div class="cardDataDateTime">
+                    <div>
+                      <i class="material-icons">date_range</i>
+                      <h2>15/1/22</h2>
+                    </div>
+
+                    <div>
+                      <i class="material-icons">schedule</i>
+                      <h2>2:00 AM</h2>
+                    </div>
+                  </div>
+
+                  <div class="cardDataNumOfPeople">
+                    <i class="material-icons">groups</i>
+                    <h2>2 / 3</h2>
+                  </div>
+                  <div class="cardDataVchNum">
+                    <div>
+                      <i class="material-icons">confirmation_number</i>
+                      <h2 contenteditable="true">AD6588</h2>
+                    </div>
+                    <div class="myProfileCardSecDeleteCard">
+                      <i class="material-icons">delete</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

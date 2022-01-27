@@ -1,0 +1,249 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body{
+        background-color: cornsilk;
+
+      }
+      .myProfileDashboard{
+        position: absolute;
+        z-index: 10000;
+      }
+      .myProfileMainCtnr {
+        height: 100vh;
+        /* overflow: hidden; */
+        /* height: auto; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-image: url("myProfileImg.png"); */
+        flex-wrap: wrap;
+        position: relative;
+      }
+      .myProfileMainCtnrImg  {
+          height: 100%;
+          width: 100%;
+          
+          position: absolute;
+          
+        }
+        .myProfileMainCtnrImg img{
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          height: 100%;
+          width: 50%;
+          float: right;
+          opacity: 0.2;
+
+        }
+        .myProfileSubCtnrLeft {
+          /* width:63rem; */
+        width: 50%;
+        height: 100vh;
+        /* background-color: cornsilk; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+      }
+      .myProfileHloBox {
+        height: 12rem;
+        width: 35rem;
+        background: rgb(71, 222, 154);
+        border-radius: 2rem;
+        margin-top: -1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 3rem;
+      }
+      .myProfileUserName {
+        height: 6rem;
+        width: 100%;
+        /* background-color: darksalmon; */
+        text-align: left;
+        line-height: 6rem;
+        font-size: 3rem;
+        padding-top: 1.5rem;
+        /* margin-left: 3.5rem; */
+      }
+      .myProfileHloBoxMsg {
+        height: 6rem;
+        width: 100%;
+        /* background-color: deeppink; */
+        text-align: left;
+        line-height: 6rem;
+        font-size: 2rem;
+      }
+      .myProfileSpan {
+        height: 5rem;
+        width: 100%;
+        /* background-color: white; */
+        text-align: center;
+        line-height: 5rem;
+        font-size: 2rem;
+      }
+
+      .myProfileUpdateForm {
+        height: 25rem;
+        width: 50rem;
+      /* background: rgb(71, 222, 154); */
+        
+      }
+      .myProfileUpdateForm form {
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; */
+        font-size: 2rem;
+      }
+      .myProfileUpdateForm form div {
+        height: 3rem;
+        width: 100%;
+        /* background-color: dodgerblue; */
+        /* border: 1px solid black; */
+       
+        text-align: left;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+     
+        
+    .myProfileUpdateForm form div i{
+        
+        float: right;
+        line-height: 3rem;
+        color:  rgb(71, 222, 154);;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .myProfileFormUpdateBtn{
+	width: 20rem;
+	height: 4.0rem;
+	margin: 1.0rem auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	/* background: #573b8a; */
+	background:  rgb(71, 222, 154);
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-top: 2.0rem;
+	outline: none;
+	border: none;
+	border-radius: 0.5rem;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+ .myProfileFormUpdateBtn:hover{
+	
+	background: rgb(56, 179, 123);
+}
+
+
+      .myProfileSubCtnrRight {
+        width: 50%;
+        height: 100vh;
+        /* background-color: cyan; */
+        padding: 4rem 0rem 0rem 4rem;
+      }
+      .myProfileCardSec {
+        border-radius: 2rem 0rem 0rem 0rem;
+        height: 100%;
+        width: 100%;
+        /* background-color: burlywood; */
+      }
+      .myProfileCardSecHeading {
+        height: 7rem;
+        width: 100%;
+        /* background-color: chartreuse; */
+        font-size: 3rem;
+        text-align: center;
+        line-height: 7rem;
+      }
+      .myProfileCardSecArea {
+        /* height: 46.5rem; */
+        /* height: auto; */
+        max-height: 45.5rem;
+        width: 100%;
+        /* background-color: cornflowerblue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: scroll;
+        /* margin-bottom: 1rem; */
+      }
+      .myProfileCardSecArea::-webkit-scrollbar {
+        display: none;
+      }
+
+      .myProfileCardSecArea {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+
+      .cardOuterBox {
+        height: 35rem;
+        width: 25rem;
+        background: rgb(71, 222, 154);
+        border-radius: 1rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+      }
+      .cardSubBox {
+        height: 100%;
+        width: 100%;
+      }
+      .cardMap {
+        height: 15rem;
+        width: 100%;
+      }
+      .cardMap img {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem 1rem 0 0;
+      }
+      .cardData {
+        height: 18rem;
+        width: 100%;
+        /* background-color: cyan; */
+        background: rgb(255, 255, 255);
+        border-radius: 0 0 1rem 1rem;
+      }
+      .cardDataName {
+        text-align: center;
+      }
+      .cardData div {
+        height: 3rem;
+        width: 100%;
+
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .cardData i {
+        font-size: 2rem;
+        margin-right: 1rem;
+        margin-left: 0.5rem;
+      }
+      .myProfileCardSecDeleteCard {
+        margin-left: 10rem;
+      }

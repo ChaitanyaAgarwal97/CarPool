@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+<link rel="stylesheet" href="/css/filter.css">
+    <title>Document</title>
+
+  </head>
+  <body>
+    <div class="filterDashboard">
+      {{>dashboard}}
+    </div>
+    <div class="cardFullCtnr">
+      <!-- <nav></nav> -->
+      <div class="cardArea">
+        <div class="cardOuterBox">
+          <div class="cardSubBox">
+            <div class="cardMap">
+              <img src="/googlemap.png" alt="" />
+            </div>
+            <div class="cardData">
+              <div class="cardDataName">
+                <i class="material-icons">account_circle</i>
+                <h1>kunal Ganguly</h1>
+              </div>
+              <div class="cardDataPhno">
+                <i class="material-icons">call</i>
+                <h2>9119223599</h2>
+              </div>
+              <div class="cardDataFromTo">
+                <div>
+                  <i class="material-icons">location_on</i>
+                  <h2>pal</h2>
+                </div>
+
+                <div>
+                  <i class="material-icons">location_on</i>
+                  <h2>CHB</h2>
+                </div>
+              </div>
+
+              <div class="cardDataDateTime">
+                <div>
+                  <i class="material-icons">date_range</i>
+                  <h2>15/1/22</h2>
+                </div>
+
+                <div>
+                  <i class="material-icons">schedule</i>
+                  <h2>2:00 AM</h2>
+                </div>
+              </div>
+
+              <div class="cardDataNumOfPeople">
+                <i class="material-icons">groups</i>
+                <h2>2 / 3</h2>
+              </div>
+              <div class="cardDataVchNum">
+                <i class="material-icons">confirmation_number</i>
+                <h2>AD6588</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardFilter" id="cardFilter">
+        <!-- Aim Of The Screen Out -->
+        <div class="cardMenuBtn">
+
+          <i class="material-icons" onclick="cardFilterSlide()">menu</i>
+        </div>
+
+        <div class="heading">
+          <span>
+
+            <h1>FILTER OUT HERE</h1>
+            <h2>Aim Of The Screen Out</h2>
+          </span>
+        </div>
+
+        <div class="filterOptions" id="filterOptions">
+          <div class="Location">
+            <div class="presentLocation">
+              <label for="presentLocation"
+                ><i class="material-icons">location_on</i></label
+              >
+              <input type="text" id="presentLocation" name="presentLocation" />
+            </div>
+
+            <div class="finalLocation">
+              <label for="finalLocation"
+                ><i class="material-icons">location_on</i></label>
+              <input type="text" id="finalLocation" name="finalLocation" />
+            </div>
+          </div>
+
+          <div class="filterDate">
+            <label for="start">Start date:</label>
+
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2018-07-22"
+              min="2018-01-01"
+              max="2018-12-31"
+            />
+          </div>
+
+          <div class="filterTime">
+            <div>
+              <label for="appt">Select a time:</label>
+              <input type="time" id="appt" name="appt" />
+            </div>
+            <div>
+              <input type="radio" id="AM" name="AMPM" value="AM" />
+             <label for="AM">AM</label>
+              <input type="radio" id="PM" name="AMPM" value="PM" />
+              <label for="PM">PM</label>
+            
+            </div>
+          </div>
+
+          <div class="filterNumOfPpl">
+            <label for="filterNumOfPpl"> Number Of People </label>
+            <input
+              type="number"
+              min="1"
+              max="4"
+              id="filterNumOfPpl"
+              name="filterNumOfPpl"
+            />
+          </div>
+        </div>
+        <div class="footer">
+          <h1>Interested In Carpooling ?<a href="#">click here</a></h1>
+        </div>
+      </div>
+    </div>
+    <script src="/js/filter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/carpoolform.css">
+</head>
+<body>
+	<div class="carpoolformDashboard">
+      {{>dashboard}}
+    </div>
+	<div class="mainCtnrLoginSignup">
+		<div class="loginSignupImg">
+			<div class="fancyBorder"></div>
+			<img src="liftFormImg.png" alt="">
+		</div>
+		<div class="main">  	
+			<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="lift">
+				<form>
+					<label for="chk" aria-hidden="true" id="heading">Wana Do Carpool ?</label>
+					<input class="liftInput" type="text" name="txt" placeholder="From" required="true">
+					<input class="liftInput" type="text" name="To" placeholder="To" required="true">
+					<input class="liftInput" type="date" name="pswd" placeholder="date" required="true">
+					<input class="liftInput" type="time" name="pswd" placeholder="Time" required="true">
+                    <div class="AMPM liftInput">
+						<input type="radio" id="AM" name="AMPM" value="AM" />
+						<label for="AM">AM</label>
+						<input type="radio" id="PM" name="AMPM" value="PM" />
+						<label for="PM">PM</label>
+					</div>
+					<input class="liftInput" type="text" name="carNum" placeholder="car Number" required="true">
+					
+
+
+					<input class="liftInput" type="number" name="pswd" placeholder="Number Of People" min="1" max="4" required="true">
+					<button type="submit" class="liftBtn">Submit</button>
+
+				</form>
+			</div>
+			
+			
+		</div>
+	</div>
+	</body>
+</html>
