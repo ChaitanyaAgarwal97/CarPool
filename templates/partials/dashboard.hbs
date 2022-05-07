@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
   <head>
@@ -7,8 +6,11 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/css/dashboard.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="/css/dashboard.css" />
   </head>
 
   <body>
@@ -18,22 +20,26 @@
         <span class="logo_name">Carpool</span>
       </div>
       <ul class="nav-links">
-        <li  class="nav-link-li">
-          <a href="#" class="dashboardSlideBarLogo" >
-            
-            <i class="material-icons" style="font-size:30px;"onclick="dashboardSlideBar()">menu</i>
+        <li class="nav-link-li">
+          <a href="#" class="dashboardSlideBarLogo">
+
+            <i
+              class="material-icons"
+              style="font-size:30px;"
+              onclick="dashboardSlideBar()"
+            >menu</i>
             <span class="links_name">Menu</span>
           </a>
         </li>
-            
+
         <li class="nav-link-li">
-          <a href="/myProfile" >
+          <a href="/myProfile">
             <i class="material-icons" style="font-size:30px;">account_circle</i>
             <span class="links_name">My Profile</span>
           </a>
         </li>
         <li class="nav-link-li">
-          <a href="/carpoolform">
+          <a href="/carpoolForm">
             <i class="material-icons" style="font-size:30px;">dynamic_form</i>
             <span class="links_name">Carpool Form</span>
           </a>
@@ -50,9 +56,9 @@
             <span class="links_name">Help Desk</span>
           </a>
         </li>
-        
+
         <li class="log_out">
-          <a href="/">
+          <a href="/logOut">
             <i class="bx bx-log-out"></i>
             <span class="links_name">Log out</span>
           </a>
@@ -61,12 +67,10 @@
     </div>
 
     <script>
-      function dashboardSlideBar() {
-        var dashboardSlideBar = document.getElementById("dashboardSlideBar")
-        dashboardSlideBar.classList.toggle('dashboardSlidesToLeft')
-        dashboardSlideBar.classList.toggle('dashboardDisplay')
-
-      }
+      function dashboardSlideBar() { var dashboardSlideBar =
+      document.getElementById("dashboardSlideBar")
+      dashboardSlideBar.classList.toggle('dashboardSlidesToLeft')
+      dashboardSlideBar.classList.toggle('dashboardDisplay') }
 
     </script>
   </body>
