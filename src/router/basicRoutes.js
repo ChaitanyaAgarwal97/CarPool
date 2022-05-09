@@ -12,15 +12,16 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/loginSignup", auth,async (req, res) => {
+router.get("/loginSignup", auth, async (req, res) => {
   if(req.isAuth){
     res.redirect("myProfile");
   }
-
-  try {
-    res.render("loginSignup");
-  } catch (error) {
-    console.log(error);
+  else{
+    try {
+      res.render("loginSignup");
+    } catch (error) {
+      console.log(error);
+    }
   }
 });
 
