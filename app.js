@@ -2,10 +2,13 @@
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
+const cookieParser = require('cookie-parser');
+
+// Routers to all the routes
 const basicRouter = require("./src/router/basicRoutes");
 const logInSignUpRouter = require("./src/router/logInSignUpRoutes");
 const dashboardRouter = require("./src/router/dashboardRoutes");
-const cookieParser = require('cookie-parser');
+const helpDeskRouter = require("./src/router/helpDeskRoutes");
 
 // App setup
 const app = express();
@@ -13,9 +16,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser()); 
+
+// Routes added to the app
 app.use(basicRouter);
 app.use(logInSignUpRouter);
 app.use(dashboardRouter);
+app.use(helpDeskRouter);
 
 // port
 const port = process.env.PORT  || 3000 || 80;
