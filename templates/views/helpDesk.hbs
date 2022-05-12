@@ -24,14 +24,9 @@
 			<input type="checkbox" id="helpDeskchk" aria-hidden="true">
 
 			<div class="helpDesk">
-				<form>
+				<form method="POST" action="/helpDeskSubmit">
 					<label for="chk" aria-hidden="true" id="heading">Help Desk</label>
-					
-                    <input class="helpDeskInput" type="email" name="txt" placeholder="Enter Your Email Here" required="true">
-
-					
-                    <textarea name="" id="" class="helpDeskInput helpDeskFormTextArea"  placeholder="Enter Your Query Here... "></textarea>
-					
+                    <textarea name="help" class="helpDeskInput helpDeskFormTextArea"  placeholder="Enter Your Query Here... "></textarea>
 					<button type="submit" class="helpDeskBtn">Submit</button>
 
 				</form>

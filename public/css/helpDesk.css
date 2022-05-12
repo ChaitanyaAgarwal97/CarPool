@@ -1,131 +1,147 @@
-
-	
-	body{
-		min-height: 100vh;
-		margin: 0;
-	padding: 0;
-	}
-	html{
-		font-size: 62.5%;
-	}
-	.helpDeskNav{
-		height: 10rem;
-		width: 100%;
-		background-color: cornsilk;
-		font-weight: 200;
-		font-family: "Lato", sans-serif;
-	}
-	.helpDeskDashboard{
-		position: absolute;
-		z-index: 10000;
-	}
-    .mainCtnrhelpDesk{
-	
-	display: flex;
-	justify-content:space-evenly;
-	align-items: center;
-	min-height: 100vh;
-	font-family: 'Jost', sans-serif;
-	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
-	background-color: cornsilk;
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.helpDeskNav {
+  height: 10rem;
+  width: 100%;
+  background-color: cornsilk;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
+}
+
+.helpDeskDashboard {
+  position: absolute;
+  z-index: 10000;
+}
+
+.mainCtnrhelpDesk {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+  background-color: cornsilk;
+}
+
 .helpDeskImg {
-	height: 35rem;
-	width:15rem ;
-	position: relative;
-	/* background-color: black; */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.fancyBorder{
-	position: absolute;
-	height: 40rem;
-	width: 35rem;
-	background-color: rgb(71, 222, 154);
-	z-index: 0;
-	opacity: 0.3;
-	margin-top: 7rem;
-	border-radius: 44% 56% 64% 36% / 22% 43% 57% 78% ;
-}
-.helpDeskImg img{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-repeat: no-repeat;
-		background-size: cover;
-		z-index: 2;
-
-}
-.main{
-	width: 35.0rem;
-	height: 50rem;
-	background: red;
-	overflow: hidden;
-	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
-	border-radius: 1.0rem;
-	box-shadow: 0.5rem 2.0rem 5.0rem #000;
-	/* margin-right: 15rem; */
-}
-#helpDeskchk{
-	display: none;
-}
-.helpDesk{
-	position: relative;
-	width:100%;
-	height: 100%;
-}
-.helpDesk #heading{
-	/* color: #fff; */
-	color: rgb(71, 222, 154); 
-	font-size: 3.2rem;
-	justify-content: center;
-	display: flex;
-	margin-top: 1rem;
-	letter-spacing:0.1rem;
-	/* margin: 6.0rem; */
-	font-weight: bold;
-	cursor: pointer;
-	transition: .5s ease-in-out;
-    /* background-color: brown; */
-	
-}
-.helpDeskInput{
-	width: 60%;
-	height: 3.0rem;
-	background: #e0dede;
-	justify-content: center;
-	display: flex;
-	margin: 2.0rem auto;
-	padding: 1.0rem;
-	border: none;
-	outline: none;
-	border-radius: 0.5rem;
-	
-}
-.helpDeskFormTextArea{
-    height: 25rem;
-}
-.helpDeskBtn{
-	width: 60%;
-	height: 4.0rem;
-	margin: 1.0rem auto;
-	justify-content: center;
-	display: block;
-	color: #fff;
-	/* background: #573b8a; */
-	background:  rgb(71, 222, 154);
-	font-size: 1.8rem;
-	font-weight: bold;
-	margin-top: 2.0rem;
-	outline: none;
-	border: none;
-	border-radius: 0.5rem;
-	transition: .2s ease-in;
-	cursor: pointer;
-}
- .helpDeskBtn:hover{
-	
-	background: rgb(56, 179, 123);
+  height: 35rem;
+  width: 15rem;
+  position: relative;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.fancyBorder {
+  position: absolute;
+  left: 32%;
+  height: 40rem;
+  width: 35rem;
+  background-color: rgb(71, 222, 154);
+  z-index: 0;
+  opacity: 0.3;
+  margin-top: 7rem;
+  border-radius: 44% 56% 64% 36% / 22% 43% 57% 78%;
+}
+
+.helpDeskImg img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  left: 100%;
+}
+
+.main {
+  position: relative;
+  left: 12%;
+  width: 30%;
+  height: 60rem;
+  background: red;
+  overflow: hidden;
+  background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38")
+    no-repeat center/ cover;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 2rem 5rem #000;
+  /* margin-right: 15rem; */
+}
+
+#helpDeskchk {
+  display: none;
+}
+
+.helpDesk {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.helpDesk #heading {
+  /* color: #fff; */
+  color: rgb(71, 222, 154);
+  margin-top: 1.5rem;
+  font-size: 3.2rem;
+  justify-content: center;
+  display: flex;
+  letter-spacing: 0.1rem;
+  /* margin: 6.0rem; */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  /* background-color: brown; */
+}
+
+.helpDeskInput {
+  width: 60%;
+  height: 3rem;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.helpDeskFormTextArea {
+  height: 37rem;
+  margin-top: 6%;
+  padding: 2rem;
+  width: 78%;
+  font-size: 1.5rem;
+}
+
+.helpDeskBtn {
+  width: 78%;
+  height: 4rem;
+  margin: 1rem auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  /* background: #573b8a; */
+  background: rgb(71, 222, 154);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.helpDeskBtn:hover {
+  background: rgb(56, 179, 123);
+}
