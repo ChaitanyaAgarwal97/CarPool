@@ -3,6 +3,13 @@ const mongoose = require("mongoose");
 require("../db/conn");
 
 const UserSchema = new mongoose.Schema({
+    name: {
+        type: String
+    },
+    phone: {
+        type: Number,
+        unique: true
+    },
     username: {
         type: String,
         unique: true,

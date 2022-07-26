@@ -58,14 +58,12 @@ router.post("/logIn", async (req, res) => {
   try {
     let userFound = await foundBy({ email });
     if (userFound) {
-      try {
         let passwordVerified = await bcrypt.compare(
           password,
           userFound.password
         );
         if (passwordVerified) {
-          try {
-            // generating token
+          // generating token
             let token = await generateToken({ email });
 
             // Adding token to database
@@ -73,18 +71,10 @@ router.post("/logIn", async (req, res) => {
             await userFound.save();
 
             // adding token to cookies
-            res
-              .cookie("ljwt", token, {
+            res.cookie("ljwt", token, {
                 maxAge: 2592000000,
-              })
-              .redirect("/myProfile");
-          } catch (error) {
-            res.status(500).render("loginSignup", {
-              msg_type: "danger",
-              msg_head: "Something went wrong!",
-              msg_body: "There was a problem. Please try again.",
-            });
-          }
+                overwrite: true
+              }).redirect("/myProfile");
         } else {
           res.status(400).render("loginSignup", {
             msg_type: "danger",
@@ -92,14 +82,7 @@ router.post("/logIn", async (req, res) => {
             msg_body: "Please enter valid credentials and try again.",
           });
         }
-      } catch (error) {
-        res.status(500).render("loginSignup", {
-          msg_type: "danger",
-          msg_head: "Something went wrong!",
-          msg_body: "There was a problem. Please try again.",
-        });
-      }
-    } else {
+      } else {
       res.status(400).render("loginSignup", {
         msg_type: "danger",
         msg_head: "Invalid credentials !",

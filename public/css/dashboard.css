@@ -16,13 +16,10 @@
 .dashboardSlidesToLeft {
   position: fixed;
   height: 100%;
-  
+
   width: 60px;
   background: #0a2558;
- 
-  
 }
-
 
 .sidebar .logo-details {
   height: 80px;
@@ -44,6 +41,7 @@
 }
 .sidebar .nav-links {
   margin-top: 10px;
+  padding-left: 0;
 }
 .sidebar .nav-links li {
   position: relative;
@@ -78,7 +76,8 @@
   white-space: nowrap;
 }
 
-.dashboardDisplay  .nav-links li a span,.dashboardDisplay .logo_name {
+.dashboardDisplay .nav-links li a span,
+.dashboardDisplay .logo_name {
   display: none;
 }
 
